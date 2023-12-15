@@ -1,0 +1,33 @@
+.card-details {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.imgbtn {
+    display: flex;
+}
+.card-details img {
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+.title {
+    color: #ed410a;
+}
+.price {
+    font-style: italic;
+}
+.cart-btn {
+    height:  50px;
+    padding: 5px 10px;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+.cart-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
