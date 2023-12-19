@@ -7,6 +7,9 @@ import Products from './JSON/Products.json';
 import { useState } from 'react';
 import Cart from './Components/Cart.jsx';
 import NotFound from './Components/NotFound.jsx'
+import Desktop from './Components/Desktop.jsx';
+import Laptop from './Components/laptop.jsx'
+import Console from './Components/Console.jsx';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -28,6 +31,15 @@ function App() {
           </Route>
           <Route path='/cart'>
             <Cart cart={cart}/>
+          </Route>
+          <Route path='/desktops'>
+            <Desktop addToCart={addToCart}/>
+          </Route>
+          <Route path='/laptops'>
+            <Laptop addToCart={addToCart}/>
+          </Route>
+          <Route paht='/consoles'>
+            <Console  addToCart={addToCart}/>
           </Route>
           <Route path='*'>
             <NotFound />
